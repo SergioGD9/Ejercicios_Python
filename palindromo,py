@@ -1,0 +1,15 @@
+def es_palindromo(palabra):
+    # COnvertir palabra a minusculas y eliminar espacios
+    palabra = palabra.lower().replace(" ","")
+    # Verificar si la palabra es iagual a su reverso
+    return palabra == palabra[::-1]
+
+#Introduce la palbra
+palabra = input("Introduce una palabra: ")
+
+#Verificar si la palabra es palíndroma
+if es_palindromo(palabra):
+    print(f'"{palabra}" es un palíndromo.')
+else:
+    print(f'"{palabra}" no es un palíndromo.')
+    
